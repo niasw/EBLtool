@@ -1,0 +1,91 @@
+fold=x5:
+     699.094px    <-       900um
+  2048px x 1532px -> 2636.555um x ...
+
+fold=x10:
+     1391.78px    <-       900um
+  2048px x 1532px -> 1324.347um x ...
+
+fold=x20:
+     1877.167px   <-       600um
+  2048px x 1532px -> 654.603um x ...
+
+fold=x50:
+     1559.643px   <-       200um
+  2048px x 1532px -> 262.624um x ...
+
+fold=x100:
+     1562.857px   <-       100um
+  2048px x 1532px -> 131.042um x ...
+
+# WFSPS = Writing Field Start Point Shift, default (-50,-50), which means margin = 100
+# eg. If C area's local origin (0,0) is at global (680,680), 
+#     and we set writing field to [680-marginLeft, 680-marginBottom, 1580+marginRight, 1580+marginTop]
+#     (where marginLeft+marginRight+900 & marginBottom+marginTop+900 should be a multiply of 100),
+#     then Writing Field Start Point Shift X is 50-marginLeft,
+#     and Writing Field Start Point Shift Y is 50-marginBottom.
+#     It is the C area local coordinate of the center of the first Writing Field
+#     (global at the center of [680-marginLeft,680-marginBottom,780-marginLeft,780-marginBottom])
+
+# ============== 270um ==============
+# Default Writing Field: (Global) 
+# A: 3670 530 4870 1730
+# B: 2100 530 3300 1730
+# C: 530 530 1730 1730
+# D: 3670 2100 4870 3300
+# E: 2100 2100 3300 3300
+# F: 530 2100 1730 3300
+# G: 3670 3670 4870 4870
+# H: 2100 3670 3300 4870
+# I: 530 3670 1730 4870
+# Writing Field Start Point: -100 -100 (Local)
+
+# 100 Margin Writing Field: (Global)
+# A: 3720 580 4820 1680
+# B: 2150 580 3250 1680
+# C: 580 580 1680 1680
+# D: 3720 2150 4820 3250
+# E: 2150 2150 3250 3250
+# F: 580 2150 1680 3250
+# G: 3720 3720 4820 4820
+# H: 2150 3720 3250 4820
+# I: 580 3720 1680 4820
+# Writing Field Start Point: -50 -50 (Local)
+
+# Integer Writing Field: (compatible with writing field auxiliary lines in the software for EBL)
+# Area: Writing Field (Global), WFSP: Start Point (Local)
+# A: 3700 500 4900 1700 WFSP: -70 -130
+# B: 2100 500 3300 1700 WFSP: -100 -130
+# C: 500 500 1700 1700 WFSP: -130 -130
+# D: 3700 2100 4900 3300 WFSP: -70 -100
+# E: 2100 2100 3300 3300 WFSP: -100 -100
+# F: 500 2100 1700 3300 WFSP: -130 -100
+# G: 3700 3700 4900 4900 WFSP: -70 -70
+# H: 2100 3700 3300 4900 WFSP: -100 -70
+# I: 500 3700 1700 4900 WFSP: -130 -70 
+
+# ============== 330um ==============
+# Default Writing Field: (Global) 
+# A: 3690 510 4890 1710
+# B: 2100 510 3300 1710
+# C: 510 510 1710 1710
+# D: 3690 2100 4890 3300
+# E: 2100 2100 3300 3300
+# F: 510 2100 1710 3300
+# G: 3690 3690 4890 4890
+# H: 2100 3690 3300 4890
+# I: 510 3690 1710 4890
+# Writing Field Start Point: -100 -100 (Local)
+
+# 100 Margin Writing Field: (Global)
+# A: 3740 560 4840 1660
+# B: 2150 560 3250 1660
+# C: 560 560 1660 1660
+# D: 3740 2150 4840 3250
+# E: 2150 2150 3250 3250
+# F: 560 2150 1660 3250
+# G: 3740 3740 4840 4840
+# H: 2150 3740 3250 4840
+# I: 560 3740 1660 4840
+# Writing Field Start Point: -50 -50 (Local)
+

@@ -1,0 +1,6 @@
+If you want to make arrays, please follow these:
+1. group your objects to make a unit cell (Object->Group)
+2. clone this unit cell in the symmetry you want (Edit->Clone->Create Tiled Clones)
+3. select all objects, ungroup them (Ctrl+A, Object->Ungroup)
+4. if only one unit ungrouped, try 3 again
+5. delete the origin unit cell, save your drawing (Ctrl+Shift+S)
